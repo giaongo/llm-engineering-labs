@@ -20,5 +20,6 @@ def load_tests() -> list[TestQuestion]:
     with open(TEST_FILE, "r", encoding="utf-8") as f:
         for line in f:
             data = json.loads(line.strip())
+            print("data is ", data)
             tests.append(TestQuestion(**data))
     return tests
