@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 
 load_dotenv(override=True)
 
-MODEL = "gpt-4.1-nano"
+MODEL = "gpt-5.4-mini-2026-03-17"
 DB_NAME = str(Path(__file__).parent.parent / "vector_db")
 
 # embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
